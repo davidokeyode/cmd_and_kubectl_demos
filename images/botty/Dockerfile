@@ -18,6 +18,10 @@ EXPOSE 8080
 
 WORKDIR /root/dl
 
+RUN apt-get -y update
+
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
+
 RUN apt-get -y update && \
     apt-get install -y curl iputils-ping vim zsh bash dnsutils apt-file net-tools nmap stow tmux git-core fonts-powerline sudo util-linux\
     jq ssh python \
