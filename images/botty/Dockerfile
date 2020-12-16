@@ -115,7 +115,7 @@ USER antitree:antitree
 # Setup shell customizations
 WORKDIR /home/antitree
 COPY --chown=999 ./dotfiles dotfiles
-COPY ./dotfiles/.histfile .bash_history
+# COPY ./dotfiles/.histfile .bash_history
 
 ENTRYPOINT ["/usr/local/bin/gotty"]
 
