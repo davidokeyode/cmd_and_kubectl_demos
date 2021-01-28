@@ -12,7 +12,7 @@ basic_auth = BasicAuth(app)
 basehtml = '''
 <head><title>eKLOWD ADMIN CONSOLE</title></head>
 <body>
-<h1>Hello, Admin. What command should I run?</h1>
+<h1>Welcome to the eKLOWD Admin Console</h1>
 <p>{cmd}</p>
 <p>
 <textarea rows="20" cols="60">{cmd_output}</textarea>
